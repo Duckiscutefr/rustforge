@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+"""Direct executable launcher for RustForge CLI."""
+
+import sys
+from rustforge.cli import main
+
+if __name__ == "__main__":
+    sys.exit(main())
