@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rustforge-cli"
+version = "1.0.0"
+description = "Neuroscience-backed terminal mastery trainer for Rust (2024 Edition, Chapters 1-21 + Appendices A-G)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["rust", "cli", "learning", "spaced-repetition", "fsrs", "education"]
+
+[project.scripts]
+rustforge = "rustforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rustforge*"]
